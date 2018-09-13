@@ -55,6 +55,7 @@ module.exports = function(context) {
             replaceCryptKey_ios(pluginDir, key, iv);
 
         } else if (platform == 'android') {
+            // cordova 7.1 and below compatible edit
             var pluginDir = path.join(platformPath, 'src');
             replaceCryptKey_android(pluginDir, key, iv);
 
